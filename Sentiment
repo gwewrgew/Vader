@@ -1,0 +1,11 @@
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+# Текст для анализа
+text = 'This is a great day!'
+
+# Создание объекта SentimentIntensityAnalyzer
+analyzer = SentimentIntensityAnalyzer()
+
+# Анализ тональности текста
+sentiment_scores = analyzer.polarity_scores(text)
+print(sentiment_scores)
